@@ -22,28 +22,18 @@ El dataset contiene información detallada sobre **reclamos de seguros de autom�
 
 ---
 
-## 🧹 Limpieza de datos
-
----- ✅ Sin valores faltantes significativos.  
-- ⚠️ Outliers en `Deductible` y `DriverRating` verificados mediante análisis de caja.  
-- Codificación de variables categóricas y normalización de numéricas.  
-- División en **train/test (80/20)** para modelado y validación.
 
 
 ## 🔍 Insights Principales
+Existe un 6% de Fraude. 
 
-### 🧑‍💼 Demografía
-- **Hombres jóvenes (16–25 años)** y **viudos** presentan **mayor probabilidad de cometer fraude**.  
-
-### 🚘 Vehículo
-- **Autos nuevos o de 3 a 5 años** muestran más casos fraudulentos.  
-- **Sedans y vehículos utilitarios** son las categorías con más fraudes.  
-- Marcas con más incidencia: **Accura, Mercedes, Saab, Saturn**.  
-- **Vehículos muy baratos o muy caros** concentran la mayoría de los fraudes.
-
-### ⚙️ Póliza y reclamo
-- Si **el accidente fue culpa del asegurado**, la probabilidad de fraude aumenta significativamente.  
-- Tipos de póliza con más fraudes: **All Perils** y **Collision**.  
-- Reclamos **sin reporte policial ni testigos** son **altamente sospechosos**.  
+Days_Policy_Accident none                   16.4 
+ 4 AgeOfPolicyHolder    21 to 25            14.8 
+ 5 Days_Policy_Claim    8 to 15            14.3 
+ 6 PolicyType           Sport - Collision   13.8 
+ 7 VehicleCategory      Utility                11.3 
+ 8 BasePolicy           All Perils           10.2 
+ 9 VehiclePrice         less than 20000     9.40
+10 AgeOfVehicle         4 years              9.17
 
 
